@@ -1,0 +1,114 @@
+/* Apply the following CSS selectors in any editor 
+1.  Try different styles of CSS inline,external,internal
+2. Selectors font colors, background colors, font sizes and all attributes of the fonts and colors,
+3. link colors and types,
+4. list colors and types,
+5. horizontal and vertical navigation with various attributes,
+6. for different elements,
+7. different types of 2D and 3D transforms and transitions,
+8. pseudo classes and pseudo elements */
+
+p::first-letter{
+    font-size: x-large;
+    font-weight: bold;
+    color:grey;
+
+}
+
+li::marker{
+    color: goldenrod;   
+}
+
+#external{
+    display: block;
+    font-weight: lighter;
+    color: blue;
+    font-size: large;
+    font-style: italic; 
+}
+
+#line{
+    height: 0px;
+    width: 100 vw;
+    color:black;
+    border: solid 1px;
+}
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color:crimson;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color:aquamarine;
+    border-radius: 5px;
+  }
+  
+ ul li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+ul li a:hover{
+    background-color: black;
+
+}
+
+.transformation{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    box-shadow:gray 5px 3px;
+    display:  inline-block;
+    margin-right: 40px;
+}
+
+#one:hover{
+    transform: rotate(45deg);
+    transition-timing-function: 2s;
+}
+
+#two:hover{
+    transform: scale(1.5);
+}
+
+#three:hover{
+    transform: skew(-30deg);
+}
+
+#four:hover{
+    transform: rotateX(50deg);
+}
+
+#five:hover{
+    transform: rotateY(50deg);
+}
+
+#six:hover{
+    transform: rotateZ(50deg);
+}
