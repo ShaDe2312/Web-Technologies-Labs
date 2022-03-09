@@ -27,7 +27,7 @@ li::marker{
     font-style: italic; 
 }
 
-#line{
+.line{
     height: 0px;
     width: 100 vw;
     color:black;
@@ -111,4 +111,68 @@ ul li a:hover{
 
 #six:hover{
     transform: rotateZ(50deg);
+}
+
+/* 
+#breathetext:before{
+    margin: auto;
+    animation: breathe-text 8s ease-in-out  infinite;
+    content:"Breathe in";
+}
+
+@keyframes breathe-text {
+    0%{
+        content: "breathe in";
+    }
+
+    50%{
+        content: "breathe out";
+    }
+
+    100%{
+        content: "breathe in";
+    }
+} */
+
+.circle{
+    margin: auto;
+    height: 150px;
+    width: 150px;
+    background-color: orange;
+    border-color: black;
+    border-radius: 100%;
+    animation-duration: 10s;
+    animation-name: small-big;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes small-big {
+    from{
+        height: 150px;
+        width: 150px;
+        background-color: orange;
+    }
+    
+    50%{
+        height: 300px;
+        width: 300px;
+        background-color: rgba(255, 166, 0, 0.699);
+    }
+    
+    to{
+        height: 150px;
+        width: 150px;
+        background-color: orange;
+
+    }
+}
+
+#wrapper{
+    margin-top:100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow:hidden;
+    padding: auto;
 }
